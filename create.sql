@@ -6,4 +6,4 @@ CREATE TABLE MovieGenre(mid INT, genre VARCHAR(20));
 CREATE TABLE MovieDirector(mid INT, did INT);
 CREATE TABLE MovieActor(mid INT, aid INT, role VARCHAR(50));
 CREATE TABLE MovieRating(mid INT, imdb INT, rot INT);
-CREATE TABLE Review(name VARCHAR(20), time TIMSTAMP, mid INT, rating INT, comment VARCHAR(500));
+CREATE TABLE Review(name VARCHAR(20), time TIMESTAMP, mid INT, rating INT, comment VARCHAR(500));

@@ -18,10 +18,6 @@
 	if($_GET["query"]) {
 		// Connection init
 		$db_connection = mysql_connect("localhost", "cs143", "");
-		if (!$db_connection) {
-			echo "Failed to connect to database!";
-		    exit(1);
-		}
 		mysql_select_db("CS143", $db_connection);
 
 		// Grab query
@@ -54,7 +50,7 @@
 				foreach ($row as $val) {
 					echo "<td>";
 					if ($val) echo "$val";
-					else echo "NULL";
+					else echo "N/A";
 					echo "</td>";
 				}
 				echo "</tr>";

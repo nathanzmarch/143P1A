@@ -6,7 +6,7 @@ CREATE TABLE Movie(id INT,
                   rating VARCHAR(10),
                   company VARCHAR(50),
                   PRIMARY KEY(id),
-                  CHECK(year < 3000)) ENGINE=INNODB;
+                  CHECK(year < 3000 AND year > 1500)) ENGINE=INNODB;
 -- Primary key constaint in the Actor Table on the id attribute
 CREATE TABLE Actor(id INT,
                   last VARCHAR(20),
